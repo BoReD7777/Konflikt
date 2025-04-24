@@ -1,16 +1,17 @@
 public class Person {
 
 
-        String name;
-        String surname;
-        private int age;
+    String name;
+    String surname;
+    private int age;
+    String email;
 
 
-
-    public Person(String name, String surname, int age) {
+    public Person(String name, String surname, int age, String email) {
         this.name = name;
         this.surname = surname;
         this.age = age;
+        this.email = email;
     }
 
     public String getName() {
@@ -35,6 +36,14 @@ public class Person {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     @Override
